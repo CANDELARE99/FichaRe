@@ -1,5 +1,5 @@
 @font-face {
-    font-family:"Nanum Gothic", sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap);
     font-weight: 400;
     font-style: normal;
@@ -16,74 +16,81 @@
     font-weight: 800;
     font-style: normal;
 }
-body{
+
+body {
     margin: 0;
+    padding: 0;
+    font-family: "Nanum Gothic", sans-serif;
 }
-.topBanner{
+
+.topBanner {
     box-sizing: border-box;
     background-color: #777E5F;
     padding: 0;
     height: 5em;
-    width: 100%;    
+    width: 100%;
 }
-.topBanner .titulo{
+
+.topBanner .titulo {
     font-family: "Nanum Gothic";
     margin-top: 0;
     text-align: center;
     font-weight: 800;
     letter-spacing: 2px;
-    padding-top:1%;
+    padding-top: 1%;
 }
 
-.bottomBanner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: #777E5F;
-    padding: 0;
-    height: 5em;
-    width: 100%; 
-    
-}
-.bottomBanner img{
-    max-width: 100%;
-    max-height: 100%;
-}
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: auto ;
-    padding: 8% ;
-    background-color:#DAD2B9 ;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #DAD2B9;
+    min-height: 100vh; /
 }
-.main img{
+
+.main img {
     width: 20%;
     height: 20%;
     align-content: center;
+    border-radius: 10%;
+}
 
-}
-.main .studentInfo{
+.main .studentInfo {
     list-style: none;
-    font-family: "Nanum Gothic";
     font-weight: 400;
-    align-content: center;
-    
 }
-.main .studentInfo span{
-    list-style: none;
-    font-family: "Nanum Gothic";
+
+.main .studentInfo span {
     font-weight: 900;
     color: #3F4D49;
 }
-@media only screen and (max-width:768px){
+
+footer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #777E5F;
+    padding: 0;
+    width: 100%;
+    height: 5em;
+    bottom: 0;
+}
+
+footer img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
     .main {
-        display: flex;
         flex-direction: column;
     }
-    .main img{
-        width: 100%;
+    .main img {
+        width: 90%;
     }
 }
